@@ -1,0 +1,8 @@
+import random
+import string
+char=string.ascii_letters+string.digits+string.punctuation
+n=int(input("length:"))
+pwd=""
+for i in range(n):
+    pwd+=random.choice(char)
+print(pwd)
